@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import MainCategories from '../components/MainCategories'
+import FeaturedPosts from '../components/FeaturedPosts'
 
 function HomePage() {
   return (
@@ -46,7 +47,11 @@ Happy reading!</p>
       {/* <GATERGORIES /> */}
       <MainCategories/>
       {/* <FEATURED POSTS /> */}
+      <FeaturedPosts/>
       {/* <POSTLIST /> */}
+      <div className=''>
+        <h1 className='my-8 text-2xl text-gray-600'>Recents Post</h1>
+      </div>
     </div>
   )
 }
