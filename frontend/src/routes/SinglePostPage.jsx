@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PostMenuActions from '../components/PostMenuActions'
+import Search from '../components/Search'
 
 function SinglePostPage() {
   return (
@@ -30,10 +32,13 @@ function SinglePostPage() {
           <p>Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know. </p>
           <p>Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know. </p>
           <p>Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know. </p>
+          <p>Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know. </p>
+          <p>Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know.Explore the top JavaScript techniques used by professionals to write cleaner, faster, and more maintainable code. From arrow functions to destructuring and beyond. This post covers the essential features of ES6 and beyond that every developer should know. </p>
         </div>
         {/* menu */}
         <div className='px-4 h-max sticky top-8'>
-          <h1 className=''></h1>
+          {/*author*/}
+          <h1 className='mt-8 mb-4 text-sm font-medium'></h1>
           <div className=''>
             <img src='userImg.jpeg' className='w-12 h-12 rounded-full object-cover' w="48" h="48"/>
             <Link to="/" className=''>Abdirashid</Link>
@@ -47,6 +52,18 @@ function SinglePostPage() {
               </Link>
             </div>
           </div>
+          <PostMenuActions/>
+          <h1 className='mt-8 mb-4 text-sm font-medium'>Categories</h1>
+          <div className='flex flex-col gap-2 text-sm'>
+          <Link className='underline'>All</Link>
+          <Link className='underline' to="/">Web Design</Link>
+          <Link className='underline' to="/">Development</Link>
+          <Link className='underline' to="/">Databases</Link>
+          <Link className='underline' to="/">Search Engines</Link>
+          <Link className='underline' to="/">Marketing</Link>
+          </div>
+          <h1 className='mt-8 mb-4 text-sm font-medium'>Search</h1>
+          <Search/>
         </div>
       </div>
     </div>
