@@ -13,7 +13,7 @@ function HomePage() {
         <span>.</span>
         <span className='text-blue-800'>Blogs and Articles</span>
       </div>
-      {/* <INTRODUCTION /> */}il
+      {/* <INTRODUCTION /> */}
       <div className='flex items-center justify-between'>
         {/*titles*/}
         <div className=''>
